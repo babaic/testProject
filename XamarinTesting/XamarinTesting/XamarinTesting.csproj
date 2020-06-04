@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Stripe.net" Version="36.12.2" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.48" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.48" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="18.1.0.48" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.48" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.48" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />  
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />  
+    <PackageReference Include="Xamarin.Forms.Maps" Version="4.6.0.726" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\AddCardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\SimpleEmailEntry.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\SimpleLoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MapsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PaymentPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TestListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
